@@ -3,6 +3,22 @@
 
 const $simpleCarousel = document.querySelector(".js-carousel--simple");
 
+// Carousel wcv
+new Glider(sliderSelector, {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    rewind: true,
+                    draggable: false,
+                    scrollLock: true,
+                    scrollLockDelay: 100,
+                    duration: 0.3,
+                   arrows: {
+    prev: ".js-carousel--simple-prev",
+    next: ".js-carousel--simple-next",
+  },
+                    dots: '.slider-main .slider-main__dots'
+                })
+
 new Glider($simpleCarousel, {
   slidesToShow: 2,
   slidesToScroll: 2,
