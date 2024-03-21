@@ -83,3 +83,4 @@ $thumbs.forEach($t => {
     thumbsGlider.scrollItem(index, true);
   });
 });
+$simpleCarousel.style.transform = 'translateX(100px)'
