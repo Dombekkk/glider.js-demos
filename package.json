@@ -5,8 +5,8 @@
   "main": "script.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel index.html hello.html",
+    "build": "parcel build index.html hello.html"
   },
   "repository": {
     "type": "git",
