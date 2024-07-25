@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Glider.js demos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link 
+        rel="preload" 
+        as="image" 
+        href="https://res.cloudinary.com/responsivebreakpoints/image/upload/w_432/v1453714657/robot.png"
+        imagesrcset="
+            https://res.cloudinary.com/responsivebreakpoints/image/upload/w_345/v1453714657/robot.png 345w,
+            https://res.cloudinary.com/responsivebreakpoints/image/upload/w_690/v1453714657/robot.png 690w,
+            https://res.cloudinary.com/responsivebreakpoints/image/upload/w_432/v1453714657/robot.png 432w,
+            https://res.cloudinary.com/responsivebreakpoints/image/upload/w_864/v1453714657/robot.png 864w"
+        imagesizes="(max-width: 462px) calc(100vw - 30px),
+            (min-width: 463px) and (max-width: 767px) 432px,
+            (min-width: 768px) and (max-width: 991px) 338px,
+            (min-width: 992px) and (max-width: 1199px) 376px,
+            (min-width: 1200px) 425px">
+  </head>
+  <body>
+    <img src="https://res.cloudinary.com/responsivebreakpoints/image/upload/w_432/v1453714657/robot.png" data-role="product-image" srcset="https://res.cloudinary.com/responsivebreakpoints/image/upload/w_345/v1453714657/robot.png 345w,https://res.cloudinary.com/responsivebreakpoints/image/upload/w_690/v1453714657/robot.png 690w,https://res.cloudinary.com/responsivebreakpoints/image/upload/w_432/v1453714657/robot.png 432w,https://res.cloudinary.com/responsivebreakpoints/image/upload/w_864/v1453714657/robot.png 864w" sizes="(max-width: 462px) calc(100vw - 30px),
+    (min-width: 463px) and (max-width: 767px) 432px,
+    (min-width: 768px) and (max-width: 991px) 338px,
+    (min-width: 992px) and (max-width: 1199px) 376px,
+    (min-width: 1200px) 425px" alt width="432" height="432" fetchpriority="high">
+  </body>
+</html>
