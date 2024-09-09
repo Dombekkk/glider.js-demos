@@ -1,0 +1,971 @@
+(() => {
+      // fetch('https://trustmate.io/widget/api/a4004ebf-cebb-4c19-82f6-e3af90811357/html') - TODO: remove after platform multihornet fix - !!!frontend do not remove 
+    function loadWidgetHtml() {
+    document.getElementById('a4004ebf-cebb-4c19-82f6-e3af90811357').innerHTML = `<link rel="stylesheet" href="https://trustmate.io/build/css/widget/ferret2.e84b9621.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+ .tm-ferret2{ color: #575756}
+ </style><div
+ style="display: none; "
+ class="tm-ferret2 tm-accountFerret2"
+ data-url="https://trustmate.io/"
+ data-rating-image=tm-new-star
+ data-tm-enable-lazy-loading-image="1"
+ data-tm-enable-lazy-loading-script="1"
+ ><div class="tm-ferret2__upper-row"><div class="tm-ferret2__nav-buttons"><img
+ loading="lazy"
+ class="tm-ferret2__nav-button tm-ferret2__nav-button--disable tm-carousel-button-prev"
+ width="20"
+ height="30"
+ src="https://trustmate.io/images/widgets/arrow_button.png"
+ alt="prev"
+ ><img
+ loading="lazy"
+ class="tm-ferret2__nav-button tm-ferret2__nav-button--next tm-carousel-button-next"
+ id="navRightBtn"
+ width="20"
+ height="30"
+ src="https://trustmate.io/images/widgets/arrow_button.png"
+ alt="next"
+ ></div><div class="tm-grades tm-grades--desktop"><div class="tm-grades__grade">
+ 5.0
+ </div><div class="tm-grades__grade-text">
+ Ocena
+ </div><div class="tm-grades__logo"><img loading="lazy" width="186" height="36" src="https://trustmate.io/images/logo-trustmate-2022.png" alt="TrustMate logo"></div><div class="tm-grades__text"><span>Na podstawie</span><div class="tm-grades__text--mobile-version tm-score-platforms" data-reviews="9670"><span class="tm-grades__text--color" data-tm-reviews-count="9670">9670</span>
+ opinii
+ </div></div></div><div class="tm-grades tm-grades--mobile"><div class="tm-grades__grade">
+ 5.0
+ </div><div class="tm-grades__grade-text">
+ Ocena
+ </div><div class="tm-grades__text"><span>Na podstawie</span><div class="tm-grades__text--mobile-version tm-score-platforms" data-reviews="9670"><span class="tm-grades__text--color" data-tm-reviews-count="9670">9670</span>
+ opinii
+ </div></div></div></div><div
+ id="carousel-container"
+ class="tm-carousel tm-carousel-wrapper"
+ data-tmCarouselInterval=10
+ ><div class="tm-carousel__omnibus-button-wrapper"><div class="tm-omnibus-modal__button" data-omnibus-modal-url=https://trustmate.io/api/widget/pl/c5d886c3-0915-4a5d-ad2d-3d556a60990c/omnibus-modal><i class="tm-omnibus-modal__icon"></i><span>Jak zbieramy opinie?</span></div></div><div class="tm-carousel__inner tm-carousel"><div class="tm-carousel__track tm-carousel-track"><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card tm-carousel__card--pinned"><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__pinned-text
+ ">
+ wyróżniona
+ </div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Hanna
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" data-omnibus-modal-url=https://trustmate.io/api/widget/pl/c5d886c3-0915-4a5d-ad2d-3d556a60990c/omnibus-modal><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Zamówienie przygotowane w rekordowym czasie, darmowa dostawa do apteki to świetna opcja. Ceny są zawsze konkurencyjne, co zachęca do stałego korzystania. Apteline umożliwia szybką rezerwację leków. Produkt dobrej jakości, terminowa wysyłka. Przy telefonie zawsze ktoś kompetentny, świetnie.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=078943a0-7201-45c4-a3e3-5379fc461dea data-helpfulurl=https://trustmate.io/web/api/review/078943a0-7201-45c4-a3e3-5379fc461dea/helpful data-tm-helpful-tags-count="13"><i class="tm-widget__vote-up"></i><span>13</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=078943a0-7201-45c4-a3e3-5379fc461dea data-unhelpfulurl=https://trustmate.io/web/api/review/078943a0-7201-45c4-a3e3-5379fc461dea/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ 2024-04-22
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card tm-carousel__card--pinned"><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__pinned-text
+ ">
+ wyróżniona
+ </div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Piotr
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Zamówienie zrealizowane kompletnie, asortyment zaskakuje. Zamówienie w aptece na drugi dzień, szybkość realizacji mnie zadziwia. Nieprzeciętne ceny, jakość obsługi na wysokim poziomie. Pracownicy chętnie pomogą i rozwieją wszelkie wątpliwości. Polecam. Zarezerwowałem online, odebrałem w aptece bez opóźnień. Szybko i łatwo.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=22cebb4c-d91f-442c-b037-121071e561b8 data-helpfulurl=https://trustmate.io/web/api/review/22cebb4c-d91f-442c-b037-121071e561b8/helpful data-tm-helpful-tags-count="5"><i class="tm-widget__vote-up"></i><span>5</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=22cebb4c-d91f-442c-b037-121071e561b8 data-unhelpfulurl=https://trustmate.io/web/api/review/22cebb4c-d91f-442c-b037-121071e561b8/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ 2024-04-20
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Wiesław
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Zamówienie zrealizowane z niezwykłą szybkością, pełen profesjonalizm. Odbiór w aptece dzień po rezerwacji. Nie mogło być lepiej.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=50f2a0d6-e3c6-45ae-ae8a-839c7cf5a0e5 data-helpfulurl=https://trustmate.io/web/api/review/50f2a0d6-e3c6-45ae-ae8a-839c7cf5a0e5/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=50f2a0d6-e3c6-45ae-ae8a-839c7cf5a0e5 data-unhelpfulurl=https://trustmate.io/web/api/review/50f2a0d6-e3c6-45ae-ae8a-839c7cf5a0e5/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Ewa
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Zarezerwowałam online, odbiór w aptece płynny. Znakomita efektywność. Szukałam rzadkich leków wszędzie. Tylko tutaj je znalazłam. Idealna współpraca z obsługą sklepu. Oszczędnościowe zakupy, to lubię najbardziej. Zamówiony towar dotarł bardzo szybko.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=5f2c4216-5472-44f7-b4cb-5ec1a617b983 data-helpfulurl=https://trustmate.io/web/api/review/5f2c4216-5472-44f7-b4cb-5ec1a617b983/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=5f2c4216-5472-44f7-b4cb-5ec1a617b983 data-unhelpfulurl=https://trustmate.io/web/api/review/5f2c4216-5472-44f7-b4cb-5ec1a617b983/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Krzysztof
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Bardzo dobrze oceniam obsługę.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=c5be7342-f1e5-4598-9566-3b3eeef3abb7 data-helpfulurl=https://trustmate.io/web/api/review/c5be7342-f1e5-4598-9566-3b3eeef3abb7/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=c5be7342-f1e5-4598-9566-3b3eeef3abb7 data-unhelpfulurl=https://trustmate.io/web/api/review/c5be7342-f1e5-4598-9566-3b3eeef3abb7/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Piotr
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Czat online to prawdziwa pomoc na wyciągnięcie ręki.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=83a8e90e-e97a-4600-9c05-761ca0292b4d data-helpfulurl=https://trustmate.io/web/api/review/83a8e90e-e97a-4600-9c05-761ca0292b4d/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=83a8e90e-e97a-4600-9c05-761ca0292b4d data-unhelpfulurl=https://trustmate.io/web/api/review/83a8e90e-e97a-4600-9c05-761ca0292b4d/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Dorota
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Bogaty wybór, nawet mało znane leki są na stanie. Znalazłam tu najlepsze ceny dla moich regularnych leków. Sprawnie, szybko i po mojej myśli. Doskonała obsługa klienta. Darmowa dostawa do apteki na drugi dzień to coś, co doceniam w Apteline. Ekspresowa wysyłka, a co do leków nie mam żadnych zastrzeżeń.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=bd766176-901b-400c-9032-0502c3c5aff7 data-helpfulurl=https://trustmate.io/web/api/review/bd766176-901b-400c-9032-0502c3c5aff7/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=bd766176-901b-400c-9032-0502c3c5aff7 data-unhelpfulurl=https://trustmate.io/web/api/review/bd766176-901b-400c-9032-0502c3c5aff7/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Tomasz
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Wszystko gra dzięki i pozdrawiam
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=5ddb6848-7046-460a-bf36-04e31d11d63e data-helpfulurl=https://trustmate.io/web/api/review/5ddb6848-7046-460a-bf36-04e31d11d63e/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=5ddb6848-7046-460a-bf36-04e31d11d63e data-unhelpfulurl=https://trustmate.io/web/api/review/5ddb6848-7046-460a-bf36-04e31d11d63e/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Danuta
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="4"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Zarezerwowałam łatwo, odebrałam jeszcze łatwiej. Doskonała obsługa. Zamówienie zawsze realizowane ekspresowo. Polecam Apteline za to. Bardzo konkurencyjne ceny, szczególnie w porównaniu do innych aptek. Dawno nie byłam tak bardzo zadowolona z obsługi, brawo.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=a9a32d4c-3e88-4d88-a0ec-0f9a369729f2 data-helpfulurl=https://trustmate.io/web/api/review/a9a32d4c-3e88-4d88-a0ec-0f9a369729f2/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=a9a32d4c-3e88-4d88-a0ec-0f9a369729f2 data-unhelpfulurl=https://trustmate.io/web/api/review/a9a32d4c-3e88-4d88-a0ec-0f9a369729f2/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Sylwia
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Szybkość realizacji zamówienia w Apteline to coś, co naprawdę doceniam. Dzięki niskim cenom, zakupy są tu przyjemnością.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=79ffc07c-c6c5-47df-b92d-9b742caf9a25 data-helpfulurl=https://trustmate.io/web/api/review/79ffc07c-c6c5-47df-b92d-9b742caf9a25/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=79ffc07c-c6c5-47df-b92d-9b742caf9a25 data-unhelpfulurl=https://trustmate.io/web/api/review/79ffc07c-c6c5-47df-b92d-9b742caf9a25/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Antoni
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Łatwość zamawiania i zawsze dostępne produkty.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=25fe6c54-7d41-474d-8d45-22ffe9b8dfd7 data-helpfulurl=https://trustmate.io/web/api/review/25fe6c54-7d41-474d-8d45-22ffe9b8dfd7/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=25fe6c54-7d41-474d-8d45-22ffe9b8dfd7 data-unhelpfulurl=https://trustmate.io/web/api/review/25fe6c54-7d41-474d-8d45-22ffe9b8dfd7/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Monika
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Zawsze korzystne ceny, bez względu na rodzaj leków. Leki zawsze dostępne na czas, realizacja zamówienia ekspresowa. Zamówienie kompleksowe, wszystkie leki dostępne. Z pewnością wrócę tutaj na kolejne zakupy. Proces rezerwacji i odbiór leków w aptece błyskawiczny.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=2b7596be-3e3d-4962-bc36-d125debe1141 data-helpfulurl=https://trustmate.io/web/api/review/2b7596be-3e3d-4962-bc36-d125debe1141/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=2b7596be-3e3d-4962-bc36-d125debe1141 data-unhelpfulurl=https://trustmate.io/web/api/review/2b7596be-3e3d-4962-bc36-d125debe1141/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Andrzej i Elżbieta
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Profesjonalna obsługa sklepu, ogromny plus za cierpliwość. Szybko, sprawnie, efektywnie - zamówienie gotowe do odbioru niemal natychmiast. Zawsze korzystne ceny, polecam z całego serca.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=4c5d3d31-1dd3-4b7c-bf01-f2678c984754 data-helpfulurl=https://trustmate.io/web/api/review/4c5d3d31-1dd3-4b7c-bf01-f2678c984754/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=4c5d3d31-1dd3-4b7c-bf01-f2678c984754 data-unhelpfulurl=https://trustmate.io/web/api/review/4c5d3d31-1dd3-4b7c-bf01-f2678c984754/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Alicja
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Zamawianie tutaj to gwarancja dobrych cen i jakości. Wszystko, co potrzebne, znalazłam bez problemu. Zamówienie przyszło na czas. Proces rezerwacji i odbioru w aptece - szybki, prosty, skuteczny. Obsługa, która wyznacza standardy.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=c24dae28-3160-4682-a5de-cf86a4e43651 data-helpfulurl=https://trustmate.io/web/api/review/c24dae28-3160-4682-a5de-cf86a4e43651/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=c24dae28-3160-4682-a5de-cf86a4e43651 data-unhelpfulurl=https://trustmate.io/web/api/review/c24dae28-3160-4682-a5de-cf86a4e43651/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Hanna
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Każdy grosz wydany tutaj jest tego wart. Wsparcie na wysokim poziomie, polecam.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=b7987423-c952-42e9-ad09-f0b2e6275e89 data-helpfulurl=https://trustmate.io/web/api/review/b7987423-c952-42e9-ad09-f0b2e6275e89/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=b7987423-c952-42e9-ad09-f0b2e6275e89 data-unhelpfulurl=https://trustmate.io/web/api/review/b7987423-c952-42e9-ad09-f0b2e6275e89/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Piotr
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Dostawa darmowa i szybka, leki gotowe na czas. Nic dodać, nic ująć. Kupowanie tutaj to oszczędność czasu i pieniędzy. Ceny są niesamowite. W Apteline zawsze mogę liczyć na szybką i fachową pomoc. Obsługa klienta na medal. Zamówienie online i odbiór w aptece na drugi dzień. Wygodne i szybkie. Leki rezerwowane szybko i skutecznie.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=b46cbe05-8197-40bf-940b-0a73c40c01e1 data-helpfulurl=https://trustmate.io/web/api/review/b46cbe05-8197-40bf-940b-0a73c40c01e1/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=b46cbe05-8197-40bf-940b-0a73c40c01e1 data-unhelpfulurl=https://trustmate.io/web/api/review/b46cbe05-8197-40bf-940b-0a73c40c01e1/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Anna
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Porównywałam ceny, tutaj zawsze wychodzę najlepiej.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=5e9f0e0c-ecea-4c94-8d83-e61247f86072 data-helpfulurl=https://trustmate.io/web/api/review/5e9f0e0c-ecea-4c94-8d83-e61247f86072/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=5e9f0e0c-ecea-4c94-8d83-e61247f86072 data-unhelpfulurl=https://trustmate.io/web/api/review/5e9f0e0c-ecea-4c94-8d83-e61247f86072/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Barbara
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Z czatem na stronie Apteline rozwiązałam swoje wątpliwości błyskawicznie. Korzystając z ich ofert, zawsze oszczędzam więcej niż gdzie indziej.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=1c93dc39-96e3-422f-a8b4-39182c2c6366 data-helpfulurl=https://trustmate.io/web/api/review/1c93dc39-96e3-422f-a8b4-39182c2c6366/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=1c93dc39-96e3-422f-a8b4-39182c2c6366 data-unhelpfulurl=https://trustmate.io/web/api/review/1c93dc39-96e3-422f-a8b4-39182c2c6366/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Anna
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Kompetentna obsługa chętnie udziela dodatkowych informacji. Ceny leków są tutaj zawsze uczciwe, co jest dla mnie ważne.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=861e2813-b943-4b38-a133-4efb8368124a data-helpfulurl=https://trustmate.io/web/api/review/861e2813-b943-4b38-a133-4efb8368124a/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=861e2813-b943-4b38-a133-4efb8368124a data-unhelpfulurl=https://trustmate.io/web/api/review/861e2813-b943-4b38-a133-4efb8368124a/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Michał
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Wysoka kompetencja i gotowość do pomocy. Nigdy nie miałem problemu ze znalezieniem potrzebnych leków. Ekspresowa realizacja i darmowa dostawa do apteki to duży atut. Dzięki konkurencyjnym cenom, zakupy leków są mniej obciążające. Zamówienie leków online bezproblemowe, odbiór w aptece następnego dnia.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=2dc1eae3-38b9-4c6c-a3ee-e327a1ca20da data-helpfulurl=https://trustmate.io/web/api/review/2dc1eae3-38b9-4c6c-a3ee-e327a1ca20da/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=2dc1eae3-38b9-4c6c-a3ee-e327a1ca20da data-unhelpfulurl=https://trustmate.io/web/api/review/2dc1eae3-38b9-4c6c-a3ee-e327a1ca20da/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Dariusz
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Dostawa do apteki zgodna z informacją.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=6b2957d7-3efc-422d-8424-447c204df662 data-helpfulurl=https://trustmate.io/web/api/review/6b2957d7-3efc-422d-8424-447c204df662/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=6b2957d7-3efc-422d-8424-447c204df662 data-unhelpfulurl=https://trustmate.io/web/api/review/6b2957d7-3efc-422d-8424-447c204df662/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Agata
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Zamówienie zrealizowane ekspresowo, bezproblemowo i co najważniejsze – darmowo. Żadnych problemów, super szybki i sprawny kontakt. Zamówienie zrealizowane szybko, asortyment pełny. Ceny adekwatne do jakości, jestem zadowolona. Produkt zgadza się z opisem, kontakt bezproblemowy, a wysyłka do apteki wręcz ekspresowa.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=c15c8643-38c1-4c66-a4f1-18c89ae30fa7 data-helpfulurl=https://trustmate.io/web/api/review/c15c8643-38c1-4c66-a4f1-18c89ae30fa7/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=c15c8643-38c1-4c66-a4f1-18c89ae30fa7 data-unhelpfulurl=https://trustmate.io/web/api/review/c15c8643-38c1-4c66-a4f1-18c89ae30fa7/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Danuta
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Równowartość ceny i jakości na 5 gwiazdek. Bardzo dobra obsługa, kompetentne doradztwo. Szybkość realizacji zamówienia w Apteline przewyższa oczekiwania.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=8cd4af44-5836-4b1c-9a06-ca07a06577ac data-helpfulurl=https://trustmate.io/web/api/review/8cd4af44-5836-4b1c-9a06-ca07a06577ac/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=8cd4af44-5836-4b1c-9a06-ca07a06577ac data-unhelpfulurl=https://trustmate.io/web/api/review/8cd4af44-5836-4b1c-9a06-ca07a06577ac/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Joanna
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Obsługa jest rewelacyjna, na pewno do nich wrócę. Zamówienie spełniło oczekiwania, pełna oferta leków.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=63e94a44-9f69-4b1a-83e4-a33d1edd55d0 data-helpfulurl=https://trustmate.io/web/api/review/63e94a44-9f69-4b1a-83e4-a33d1edd55d0/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=63e94a44-9f69-4b1a-83e4-a33d1edd55d0 data-unhelpfulurl=https://trustmate.io/web/api/review/63e94a44-9f69-4b1a-83e4-a33d1edd55d0/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Agnieszka
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Przystępne ceny, które naprawdę robią różnicę.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=d9e716cf-4838-4308-9841-bd5979d6ba80 data-helpfulurl=https://trustmate.io/web/api/review/d9e716cf-4838-4308-9841-bd5979d6ba80/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=d9e716cf-4838-4308-9841-bd5979d6ba80 data-unhelpfulurl=https://trustmate.io/web/api/review/d9e716cf-4838-4308-9841-bd5979d6ba80/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Ewa
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Wszystko dobrze. Szybka dostawa do pobliskiej apteki . Super
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=f2a70522-8d26-46f2-b58e-ced5688929de data-helpfulurl=https://trustmate.io/web/api/review/f2a70522-8d26-46f2-b58e-ced5688929de/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=f2a70522-8d26-46f2-b58e-ced5688929de data-unhelpfulurl=https://trustmate.io/web/api/review/f2a70522-8d26-46f2-b58e-ced5688929de/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Marzena
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Za te ceny, jakość usług jest naprawdę imponująca. Duża dostępność leków, nawet tych specjalistycznych. Zawsze miła i pomocna obsługa, polecam. Ekspresowa dostawa do apteki zmienia wszystko. Bardzo wygodne! Rezerwacja prosta jak ABC, odbiór w aptece dzień później. Genialnie.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=1d610f02-982e-4703-9e41-7e206d013c78 data-helpfulurl=https://trustmate.io/web/api/review/1d610f02-982e-4703-9e41-7e206d013c78/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=1d610f02-982e-4703-9e41-7e206d013c78 data-unhelpfulurl=https://trustmate.io/web/api/review/1d610f02-982e-4703-9e41-7e206d013c78/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ ANNA
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Znakomita obsługa klienta. Błyskawiczne przetworzenie zamówienia, leki gotowe na drugi dzień. Każda wizyta tutaj to gwarancja znalezienia dobrych cen. Odbiór leków w aptece sprawnie. Oby więcej tak rzetelnych firm było, polecam.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=2ca3ef0f-0974-4ed2-bd07-fff5432e292d data-helpfulurl=https://trustmate.io/web/api/review/2ca3ef0f-0974-4ed2-bd07-fff5432e292d/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=2ca3ef0f-0974-4ed2-bd07-fff5432e292d data-unhelpfulurl=https://trustmate.io/web/api/review/2ca3ef0f-0974-4ed2-bd07-fff5432e292d/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ teresa
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Cierpliwość i kompetencja pracowników - pierwszorzędna. Szybkość dostawy do apteki to wielki atut, szczególnie że jest za darmo. Najlepsze ceny w internecie, bez dwóch zdań. Tutaj każdy lek jest na wyciągnięcie ręki, bez względu na jego rzadkość. Zarezerwowane online, odebrane bez kłopotu. Usługa na plus.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=6552f511-80cf-441e-a114-c7009ffdab07 data-helpfulurl=https://trustmate.io/web/api/review/6552f511-80cf-441e-a114-c7009ffdab07/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=6552f511-80cf-441e-a114-c7009ffdab07 data-unhelpfulurl=https://trustmate.io/web/api/review/6552f511-80cf-441e-a114-c7009ffdab07/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ LESZEK
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Szybkość realizacji zamówienia w Apteline to coś, co naprawdę wyróżnia tę aptekę.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=e709ba6c-2e87-4a08-ac7b-3001607d703f data-helpfulurl=https://trustmate.io/web/api/review/e709ba6c-2e87-4a08-ac7b-3001607d703f/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=e709ba6c-2e87-4a08-ac7b-3001607d703f data-unhelpfulurl=https://trustmate.io/web/api/review/e709ba6c-2e87-4a08-ac7b-3001607d703f/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Krzysztof
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Ceny są tutaj naprawdę korzystne, polecam każdemu. Otrzymałem produkty najwyższej jakości, ekstra. Zamówienie w aptece na drugi dzień, świetna szybkość realizacji. Apteline - asortyment leków na każdą dolegliwość. Zarezerwowałem online, odbiór w aptece był natychmiastowy. Świetna obsługa.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=bb5fdd4d-7fb3-433b-94f2-607982bbcd4c data-helpfulurl=https://trustmate.io/web/api/review/bb5fdd4d-7fb3-433b-94f2-607982bbcd4c/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=bb5fdd4d-7fb3-433b-94f2-607982bbcd4c data-unhelpfulurl=https://trustmate.io/web/api/review/bb5fdd4d-7fb3-433b-94f2-607982bbcd4c/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Krystyna
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Znakomite ceny, zdecydowanie polecam to miejsce. Rezerwacja online to przyszłość aptek. Błyskawiczna realizacja, leki gotowe do odbioru następnego dnia. Mailowo otrzymałam bardzo szczegółowe informacje. Apteline dba o swoich klientów. Bezproblemowa rezerwacja online, odbiór w aptece szybki. Polecam.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=d307984f-2426-4736-8ebd-48c1e0f8d169 data-helpfulurl=https://trustmate.io/web/api/review/d307984f-2426-4736-8ebd-48c1e0f8d169/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=d307984f-2426-4736-8ebd-48c1e0f8d169 data-unhelpfulurl=https://trustmate.io/web/api/review/d307984f-2426-4736-8ebd-48c1e0f8d169/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Anna
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Wszystko na czas więc bez żadnego stresu.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=175181bb-f91f-4bf3-b2ce-dda86c7259d6 data-helpfulurl=https://trustmate.io/web/api/review/175181bb-f91f-4bf3-b2ce-dda86c7259d6/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=175181bb-f91f-4bf3-b2ce-dda86c7259d6 data-unhelpfulurl=https://trustmate.io/web/api/review/175181bb-f91f-4bf3-b2ce-dda86c7259d6/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Krzysztof
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ . Rezerwacja online, odbiór lokalnie. Ceny leków są konkurencyjne, obsługa klienta na medal. Szybki odbiór w aptece po zamówieniu online. Całość przebiegła gładko. Dostawa na drugi dzień, darmowa – Apteline wyznacza wysokie standardy.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=0a1dffb2-d50f-42c5-ba2e-b56909e0fbb7 data-helpfulurl=https://trustmate.io/web/api/review/0a1dffb2-d50f-42c5-ba2e-b56909e0fbb7/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=0a1dffb2-d50f-42c5-ba2e-b56909e0fbb7 data-unhelpfulurl=https://trustmate.io/web/api/review/0a1dffb2-d50f-42c5-ba2e-b56909e0fbb7/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Marlena
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Polecam gorąco, dostępność leków w bardzo dobrych cenach, szybkie dostarczanie zamówień .
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=a608dabd-f035-4c24-9ef3-563383daa850 data-helpfulurl=https://trustmate.io/web/api/review/a608dabd-f035-4c24-9ef3-563383daa850/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=a608dabd-f035-4c24-9ef3-563383daa850 data-unhelpfulurl=https://trustmate.io/web/api/review/a608dabd-f035-4c24-9ef3-563383daa850/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Elżbieta
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Znalezienie specjalistycznych leków tutaj to nie problem. Szybka dostawa. Zostałam znakomicie obsłużony, chętnie tutaj wrócę. Warto tu kupować, ceny zawsze na poziomie. Odbiór w aptece po online rezerwacji zaskakująco płynny.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=d44c5bae-31b7-42e0-bde7-aa19ea299b28 data-helpfulurl=https://trustmate.io/web/api/review/d44c5bae-31b7-42e0-bde7-aa19ea299b28/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=d44c5bae-31b7-42e0-bde7-aa19ea299b28 data-unhelpfulurl=https://trustmate.io/web/api/review/d44c5bae-31b7-42e0-bde7-aa19ea299b28/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Leszek
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Rezerwacja bez kłopotu, odbiór w aptece dzień później. Polecam serdecznie.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=c5a033bb-d5d1-424a-b414-5ec5f60fe1f5 data-helpfulurl=https://trustmate.io/web/api/review/c5a033bb-d5d1-424a-b414-5ec5f60fe1f5/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=c5a033bb-d5d1-424a-b414-5ec5f60fe1f5 data-unhelpfulurl=https://trustmate.io/web/api/review/c5a033bb-d5d1-424a-b414-5ec5f60fe1f5/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Hanna
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Najlepsze ceny, jakie mogłam znaleźć, zdecydowanie polecam.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=21ab4701-f622-4564-912b-4790bb9a888b data-helpfulurl=https://trustmate.io/web/api/review/21ab4701-f622-4564-912b-4790bb9a888b/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=21ab4701-f622-4564-912b-4790bb9a888b data-unhelpfulurl=https://trustmate.io/web/api/review/21ab4701-f622-4564-912b-4790bb9a888b/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ fqewrfqwrf
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="3"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Szybka dostawa, ale ceny nie są zbyt konkurencyjne. Na doz.pl jest znacznie taniej.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=37e24d05-2e67-46d8-8a31-09090271287a data-helpfulurl=https://trustmate.io/web/api/review/37e24d05-2e67-46d8-8a31-09090271287a/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=37e24d05-2e67-46d8-8a31-09090271287a data-unhelpfulurl=https://trustmate.io/web/api/review/37e24d05-2e67-46d8-8a31-09090271287a/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Magdalena
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Każda wizyta tutaj to potwierdzenie, że warto. Obsługa przebiegła sprawnie i szybko wszytko zostało załatwione. Odbiór rezerwowanych leków? Zawsze łatwo i szybko. Ekspresowa dostawa do apteki, a do tego za darmo. Rewelacja! Wysyłka do apteki przebiegła szybko i sprawnie.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=7049c5fb-8e3a-47d5-997c-aec526b739d6 data-helpfulurl=https://trustmate.io/web/api/review/7049c5fb-8e3a-47d5-997c-aec526b739d6/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=7049c5fb-8e3a-47d5-997c-aec526b739d6 data-unhelpfulurl=https://trustmate.io/web/api/review/7049c5fb-8e3a-47d5-997c-aec526b739d6/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Dorota
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Dzięki niskim cenom, moje leczenie jest bardziej przystępne.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=4cf86248-1a12-4972-8fbe-bc09446b8d00 data-helpfulurl=https://trustmate.io/web/api/review/4cf86248-1a12-4972-8fbe-bc09446b8d00/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=4cf86248-1a12-4972-8fbe-bc09446b8d00 data-unhelpfulurl=https://trustmate.io/web/api/review/4cf86248-1a12-4972-8fbe-bc09446b8d00/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Adam
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Szybka realizacja i darmowa dostawa do apteki. Nie ma lepszego serwisu. Profesjonalna obsługa sklepu, ogromny plus za cierpliwość. Rezerwacja leków w Apteline to czysta efektywność. Ceny tutaj zawsze przekonują mnie do zakupu. Rezerwacja prosta jak ABC, odbiór w aptece dzień później. Genialnie.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=1172439c-a209-4f2a-baab-e26fb06cf6b7 data-helpfulurl=https://trustmate.io/web/api/review/1172439c-a209-4f2a-baab-e26fb06cf6b7/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=1172439c-a209-4f2a-baab-e26fb06cf6b7 data-unhelpfulurl=https://trustmate.io/web/api/review/1172439c-a209-4f2a-baab-e26fb06cf6b7/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Iwona
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Jestem bardzo zadowolona z obsługi sklepu.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=d3551097-4649-46df-bf25-2264240b05ef data-helpfulurl=https://trustmate.io/web/api/review/d3551097-4649-46df-bf25-2264240b05ef/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=d3551097-4649-46df-bf25-2264240b05ef data-unhelpfulurl=https://trustmate.io/web/api/review/d3551097-4649-46df-bf25-2264240b05ef/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Bożena
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Obsługa chętnie pomoże w każdej chwili. To firma godna polecenia. Zamówienie zrealizowane i dostarczone do apteki ekspresowo, jestem pod wrażeniem. Zamówienie bez braków, wszystko dostępne jak zwykle. Tutaj moje zakupy zawsze kończą się oszczędnościami. Godna polecenia, super.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=e56d3346-a9e4-4fb3-bb02-7beb81be2c8c data-helpfulurl=https://trustmate.io/web/api/review/e56d3346-a9e4-4fb3-bb02-7beb81be2c8c/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=e56d3346-a9e4-4fb3-bb02-7beb81be2c8c data-unhelpfulurl=https://trustmate.io/web/api/review/e56d3346-a9e4-4fb3-bb02-7beb81be2c8c/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Jadwiga
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Szybkość dostayy do apteki przekroczyła moje oczekiwania. Doskonała komunikacja i wsparcie. Odbiór leków bez kolejki, dzięki rezerwacji. Ceny leków rewelacyjne, za każdym razem jestem zadowolona. Zadowalająca obsługa, a zamówienie zgodne z opisem. Wszystko Ok!
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=01e61f7e-a1ef-448e-ad9e-16f89b8b1f23 data-helpfulurl=https://trustmate.io/web/api/review/01e61f7e-a1ef-448e-ad9e-16f89b8b1f23/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=01e61f7e-a1ef-448e-ad9e-16f89b8b1f23 data-unhelpfulurl=https://trustmate.io/web/api/review/01e61f7e-a1ef-448e-ad9e-16f89b8b1f23/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Henryk
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Tutaj ceny są zawsze sprawiedliwe, co doceniam jako klient.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=cae7ad95-d683-4704-ac47-d9ee4a566bbe data-helpfulurl=https://trustmate.io/web/api/review/cae7ad95-d683-4704-ac47-d9ee4a566bbe/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=cae7ad95-d683-4704-ac47-d9ee4a566bbe data-unhelpfulurl=https://trustmate.io/web/api/review/cae7ad95-d683-4704-ac47-d9ee4a566bbe/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Grażyna
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Użyteczna obsługa, która potrafi szybko i sprawnie pomóc.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=67ea1bb7-4996-4576-9fb8-e375968b6907 data-helpfulurl=https://trustmate.io/web/api/review/67ea1bb7-4996-4576-9fb8-e375968b6907/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=67ea1bb7-4996-4576-9fb8-e375968b6907 data-unhelpfulurl=https://trustmate.io/web/api/review/67ea1bb7-4996-4576-9fb8-e375968b6907/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Paweł
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Wszystko na TAK
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=79b16dff-f610-4427-8836-71ea1f84c6e4 data-helpfulurl=https://trustmate.io/web/api/review/79b16dff-f610-4427-8836-71ea1f84c6e4/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=79b16dff-f610-4427-8836-71ea1f84c6e4 data-unhelpfulurl=https://trustmate.io/web/api/review/79b16dff-f610-4427-8836-71ea1f84c6e4/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ epw_Krzysztof
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Zamówienie w aptece na drugi dzień, darmowa dostawa to coś wspaniałego.
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=31f02bea-74d6-47e5-b59a-d8c80a6aa550 data-helpfulurl=https://trustmate.io/web/api/review/31f02bea-74d6-47e5-b59a-d8c80a6aa550/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=31f02bea-74d6-47e5-b59a-d8c80a6aa550 data-unhelpfulurl=https://trustmate.io/web/api/review/31f02bea-74d6-47e5-b59a-d8c80a6aa550/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div><div
+ class="tm-carousel__card-wrapper tm-carousel-item"
+ ><div class="tm-carousel__card "><div class="tm-carousel__review-content"><div class="tm-comment__comment
+ tm-comment__comment--none
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-carousel__review "><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__name">
+ Valiantsina
+ </div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__verified-icon"><div>
+ zweryfikowano
+ </div><div class="tm-review-source" ><i class="tm-icon tm-icon__verified-badge--active"></i></div></div></div><div class="tm-carousel__row tm-carousel__row--center" data-tm-review-grade="5"></div><div class="tm-carousel__row tm-carousel__row--center tm-carousel__row--text"><div class="tm-carousel__text"><div>
+ Obsługa klienta jest profesjonalna i kulturalna. Porównywałam i tutaj zawsze wygrywają ceną. Zamówienie zostało zrealizowane megaszybko. Zamówienie proste jak nigdy, wszystko było dostępne. Szybka rezerwacja online, odbiór w aptece na drugi dzień. Doskonałe!
+ 
+ </div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-widget__action"><div class="tm-widget__vote tm-widget__up-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=5aec5107-fe7a-4a84-a633-b9d1daf068bb data-helpfulurl=https://trustmate.io/web/api/review/5aec5107-fe7a-4a84-a633-b9d1daf068bb/helpful data-tm-helpful-tags-count="0"><i class="tm-widget__vote-up"></i><span>0</span></div><div class="tm-widget__vote tm-widget__down-vote" tabindex="0" role="button" aria-pressed="false" data-publicidentifier=5aec5107-fe7a-4a84-a633-b9d1daf068bb data-unhelpfulurl=https://trustmate.io/web/api/review/5aec5107-fe7a-4a84-a633-b9d1daf068bb/unhelpful data-tm-unhelpful-tags-count="0"><i class="tm-widget__vote-down"></i><span>0</span></div></div></div><div class="tm-carousel__row tm-carousel__row--center"><div class="tm-carousel__created-at">
+ dzisiaj
+ </div></div><div
+ class="tm-carousel__action-wrapper
+ "></div></div></div></div></div></div></div></div><div class="tm-carousel__progress-track tm-carousel-progress-track"><div class="tm-carousel__dart tm-carousel-dart"></div></div><div class="tm-carousel__footer-mobile"><div class="tm-carousel__verified-mobile">zebranych i zweryfikowanych przez</div><div class="tm-score-box__logo-mobile"><img loading="lazy" width="140" height="27" src="https://trustmate.io/images/logo-trustmate-2022.png" alt="TrustMate logo"></div></div><div class="tm-productModal-wrapper"><style>
+ @keyframes spin{0%{transform:translateX(-50%) rotate(0deg)}100%{transform:translateX(-50%) rotate(360deg)}}@keyframes spin{0%{transform:translateX(-50%) rotate(0deg)}100%{transform:translateX(-50%) rotate(360deg)}}@keyframes spin{0%{transform:translateX(-50%) rotate(0deg)}100%{transform:translateX(-50%) rotate(360deg)}}.tm-productModal-bg{align-items:center;display:none;height:100%;justify-content:center;left:0;position:fixed;top:0;width:100%;z-index:2147483647;background:rgba(255,255,255,.3);backdrop-filter:blur(6px)}.tm-productModal-bg--open{display:flex}.tm-productModal{background:#fff;color:#1d1d1b;font-family:"Inter",sans-serif;font-size:10px;left:50%;position:fixed;top:50%;display:none;transition:all .2s ease-in-out;transform:scale(0) translate(-50%, -50%);transform-origin:top left;z-index:2147483647;box-shadow:6px 6px 19px rgba(0,0,0,.1019607843);border-radius:4px}.tm-productModal .tm-product-origin{opacity:.8}.tm-productModal .tm-translation-button{align-items:center;background-color:#fff;border-radius:1.6em;bottom:0;display:flex;gap:.8em;flex-direction:row;justify-content:center;max-height:3.4em;overflow:hidden;padding:3.2em;padding-bottom:2.4em;padding-top:2em;position:absolute;width:100%;z-index:999;cursor:pointer}.tm-productModal .tm-translation-button img{width:auto;height:14px}.tm-productModal .tm-translation-button>div:nth-child(2){display:none}.tm-productModal .tm-translation-button:focus>div:nth-child(3){display:none}.tm-productModal .tm-translation-button:focus>div:nth-child(2){display:block}.tm-productModal .tm-translation-button-text{font-size:1.2em}.tm-productModal .tm-productModal__review-original{display:none}.tm-productModal__review-default{font-size:1.3em;display:none}.tm-productModal .tm-translation-button:focus~.tm-productModal__review-wrapper>.tm-productModal__review>.tm-productModal__review-translated{display:none}.tm-productModal .tm-translation-button:focus~.tm-productModal__review-wrapper>.tm-productModal__review>.tm-productModal__review-original{display:block}.tm-productModal .tm-comment__comment{align-items:center;background-color:#fff;border-radius:1.6em;cursor:pointer;display:flex;gap:.4em;flex-direction:column;max-height:90%;overflow:hidden;padding-bottom:2.6em;position:absolute;transition:transform .5s ease-in-out;bottom:0;padding-left:0;padding-right:0;width:100%;z-index:10;transform:translateY(calc(100% - 4.8em))}.tm-productModal .tm-comment__comment:hover{transform:translateY(10%);z-index:11}.tm-productModal .tm-comment__comment--none{display:none}.tm-productModal .tm-comment__comment:hover .tm-comment__arrow--up{visibility:hidden}.tm-productModal .tm-comment__comment:hover .tm-comment__arrow--down{visibility:unset}.tm-productModal .tm-comment__arrow{border:1px solid blue}.tm-productModal .tm-comment__arrow--hidden{visibility:hidden}.tm-productModal .tm-comment__arrow--up{transform:rotate(180deg);width:100%;display:flex;align-items:center;justify-content:center}.tm-productModal .tm-comment__arrow--down{visibility:hidden;width:100%;display:flex;align-items:center;justify-content:center}.tm-productModal .tm-comment__icon-arrow{width:12px;height:10px;display:block;position:relative}.tm-productModal .tm-comment__icon-arrow:before{position:absolute;width:100%;top:0;left:0;height:100%;background-repeat:no-repeat;content:"";background-image:url("data:image/svg+xml;utf8,<svg width='auto' height='10' viewBox='0 0 18 12' fill='none' xmlns='http://www.w3.org/2000/svg'><g filter='url(%23filter0_d_5_23429)'><path d='M3 1L8 6L13 1L15 2L8 9L1 2L3 1Z' fill='%23FF8730'/></g><defs><filter id='filter0_d_5_23429' x='0' y='0' width='18' height='12' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/><feOffset dx='1' dy='1'/><feGaussianBlur stdDeviation='1'/><feComposite in2='hardAlpha' perator='out'/><feColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0'/><feBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_5_23429'/><feBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_5_23429' result='shape'/></filter></defs></svg>")}.tm-productModal .tm-comment__header{align-items:center;display:flex;gap:.8em;justify-content:center;margin-bottom:1.2em}.tm-productModal .tm-comment__chat-icon{width:14px;height:14px;position:relative}.tm-productModal .tm-comment__chat-icon:before{position:absolute;width:100%;top:0;left:0;height:100%;background-repeat:no-repeat;content:"";background-image:url("data:image/svg+xml;utf8,<svg width='auto' height='13' viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 0.25C4.47661 0.25 0.00109863 3.88672 0.00109863 8.375C0.00109863 10.2355 0.778833 11.9395 2.0679 13.3047C1.48665 14.8477 0.276099 16.1516 0.256567 16.166C-0.00222169 16.4395 -0.0705811 16.8398 0.0759033 17.1816C0.22731 17.5234 0.561763 17.75 0.937544 17.75C3.33989 17.75 5.19926 16.7441 6.37114 15.9434C7.46489 16.2969 8.7227 16.5 10 16.5C15.5235 16.5 19.9649 12.8621 19.9649 8.375C19.9649 3.88789 15.5235 0.25 10 0.25ZM10.004 14.625C8.95903 14.625 7.92895 14.4639 6.94223 14.1516L6.05356 13.8732L5.29184 14.4104C4.7352 14.8057 3.9684 15.2455 3.04575 15.5432C3.33383 15.0697 3.60707 14.5373 3.82231 13.9709L4.23715 12.8771L3.43168 12.0229C2.72739 11.2695 1.87778 10.0234 1.87778 8.375C1.87778 4.92773 5.52036 2.125 10.0028 2.125C14.4852 2.125 18.1278 4.92773 18.1278 8.375C18.1278 11.8223 14.4844 14.625 10.004 14.625Z' fill='%23FF8730'/></svg>")}.tm-productModal .tm-comment__header-text{font-size:1.4em;font-weight:500}.tm-productModal .tm-comment__text{align-self:flex-start;font-size:1.2em;padding-left:.4em;overflow-y:auto;scrollbar-width:none;text-align:left;min-height:2.6em;max-height:60%;margin-bottom:.4em}.tm-productModal .tm-comment__text::-webkit-scrollbar{width:.4em}.tm-productModal .tm-comment__text::-webkit-scrollbar,.tm-productModal .tm-comment__text::-webkit-scrollbar-thumb{overflow:visible;border-radius:4px}.tm-productModal .tm-comment__text::-webkit-scrollbar-thumb{background:rgba(0,0,0,.2)}.tm-productModal .tm-comment__comment:hover .tm-comment__arrow--up{visibility:hidden}.tm-productModal .tm-comment__comment .tm-comment__arrow--down{visibility:hidden}.tm-productModal .tm-comment__comment:hover .tm-comment__arrow--down{visibility:unset}.tm-productModal .tm-comment__comment:hover~.tm-productModal__review-wrapper,.tm-productModal .tm-comment__comment:hover~.tm-productModal__review-createdAt{filter:blur(6px) !important;transition:filter .4s ease-in-out}.tm-productModal__hidden{display:none !important}.tm-productModal__translation-button{display:flex;gap:.4em;justify-content:center;align-items:center;cursor:pointer;margin-top:2.4em}@keyframes fadein{0%{opacity:0}1%{opacity:0}100%{opacity:1}}.tm-productModal__animate{display:unset;transform:scale(1) translate(-50%, -50%);animation:.2s ease 0s normal forwards 1 fadein;transform-origin:top left}.tm-productModal__close{background:#ff8730;border-radius:50%;cursor:pointer;height:2.2em;position:absolute;right:-8px;top:-8px;transition:all .3s;width:2.2em;z-index:999}@media(max-width: 768px){.tm-productModal__close{right:8px;top:8px}}.tm-productModal__close:hover,.tm-productModal__close:focus{background:#ff6b00}.tm-productModal__close::before,.tm-productModal__close::after{background:#fff;border-radius:5px;content:"";display:block;height:3px;position:absolute;top:50%;left:50%;width:1.4em}.tm-productModal__close::before{transform:translate(-50%, -50%) rotate(45deg)}.tm-productModal__close::after{transform:translate(-50%, -50%) rotate(-45deg)}.tm-productModal__container{overflow-y:hidden;width:90vw;max-height:900px;max-width:1500px;height:80vh;display:grid;min-height:400px;grid-template-columns:3fr 2fr;overflow:hidden}@media(max-width: 768px){.tm-productModal__container{grid-template-rows:60% 40%;grid-template-columns:1fr}}.tm-productModal__container--without-image{grid-template-columns:minmax(360px, 600px);grid-template-rows:600px}.tm-productModal__image-wrapper{align-items:center;box-sizing:border-box;display:flex;justify-content:center;overflow:hidden;position:relative;background-color:#f0f0f0}.tm-productModal__image-wrapper img{overflow:hidden;object-fit:cover}.tm-productModal__image-wrapper iframe{height:100%;width:100%}.tm-productModal__video{height:100%;width:100%}.tm-productModal__play{background-repeat:no-repeat;background-image:url('data:image/svg+xml,<svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V28L22 14L0 0Z" fill="LightGray"/></svg>');height:28px;width:22px;position:absolute}.tm-productModal__small-images{position:absolute;left:5px;top:10px;overflow:hidden;display:flex;flex-direction:row;justify-content:flex-start;height:51px;width:calc(100% - 10px)}.tm-productModal__small-image{display:flex;align-items:center;justify-content:center;margin:0 5px;cursor:pointer;box-sizing:border-box;height:50px;width:50px}.tm-productModal__small-image--active{border-bottom:1px solid #ff8730;cursor:default}.tm-productModal__small-image img{overflow:hidden;box-sizing:border-box;object-fit:cover;height:100%;width:100%}.tm-productModal__nav{all:unset;position:absolute;top:50%;cursor:pointer;border-radius:50%;background-color:#fff;padding:.8em;width:32px;height:32px;display:flex;align-items:center;justify-content:center;opacity:.95}.tm-productModal__nav:focus{outline:revert}.tm-productModal__nav--next{right:16px;transform:rotate(-180deg)}.tm-productModal__nav--next img{transform:translateX(-0.2em)}.tm-productModal__nav--prev{left:16px}.tm-productModal__nav--prev img{transform:translateX(-0.2em)}.tm-productModal__nav--disable{pointer-events:none;opacity:.4;border-color:#000}.tm-productModal__product-link-btn{padding:.4em 1.6em;display:flex;align-items:center;justify-content:center;text-align:center;background:#fff;cursor:pointer;position:absolute;font-weight:600;font-size:1.2em;bottom:20px;right:10px}.tm-productModal__product-link-btn>a{color:#ff8730}.tm-productModal__product-link-btn--with-img{bottom:70px}@media(min-width: 768px){.tm-productModal__product-link-btn{bottom:20px}.tm-productModal__product-link-btn--with-img{bottom:120px}}.tm-productModal__info-wrapper{width:calc(100% - 1.6em);margin:.8em;padding:4em 0 6.2em 0;box-sizing:border-box;position:relative;height:100%}.tm-productModal__review-wrapper{display:flex;justify-content:center;flex-direction:column;align-items:center;gap:12px;position:relative;margin-bottom:3.2em}.tm-productModal__review{overflow-y:auto;height:fit-content;padding:.8em 2.4em 2.4em 2.4em;max-height:180px}@media(min-width: 768px){.tm-productModal__review{max-height:320px}}.tm-productModal__review--long{max-height:90px}@media(min-width: 768px){.tm-productModal__review--long{max-height:360px}}.tm-productModal__review p{font-size:1.4em;font-weight:400;line-height:1.3;letter-spacing:0em}.tm-productModal__review::-webkit-scrollbar{width:.4em}.tm-productModal__review::-webkit-scrollbar,.tm-productModal__review::-webkit-scrollbar-thumb{overflow:visible;border-radius:4px}.tm-productModal__review::-webkit-scrollbar-thumb{background:rgba(0,0,0,.2)}.tm-productModal__author-wrapper{display:flex;align-items:center;justify-content:center;gap:8px}.tm-productModal__author-name{font-size:2em;font-weight:700;text-align:center;line-height:1}.tm-productModal__review-createdAt{color:rgba(0,0,0,.61);margin-bottom:1.6em;text-align:center}.tm-productModal__review-createdAt--bottom{position:absolute;bottom:2em;left:0;right:0;margin:0 auto}.tm-productModal__review-grade{width:100%}.tm-productModal__review-stars{display:flex;align-items:center;justify-content:center}.tm-review-stars__star{margin:.2em}.tm-review-stars__star img{height:2.4em;width:auto;opacity:.4}.tm-review-stars__star .trustmate-star__icon{position:relative;height:1.9em;content:url("data:image/svg+xml;utf8,<svg width='100%' height='100%' viewBox='0 0 35 40' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M34.6637 11.889C31.5072 12.9634 26.9789 14.8724 22.2597 18.3307C20.04 19.96 18.2109 21.616 14.0466 25.9534C10.7658 29.3762 6.39737 34.0866 1.38072 39.9734C1.42956 35.081 2.0866 27.6226 5.1987 19.1831C8.5239 10.1798 13.2609 3.79578 16.5594 0C17.0478 2.17092 17.8202 4.74584 19.0766 7.52053C19.8846 9.3141 20.7592 10.8857 21.6071 12.2353C19.1698 13.3762 15.8047 15.2897 12.4484 18.4462C9.74476 20.9856 7.88461 23.5516 6.63266 25.5805C8.6704 23.1032 12.1954 19.4539 17.5361 16.515C24.5816 12.6393 31.1787 11.9822 34.6682 11.889H34.6637Z' fill='url(%23paint0_linear_122_1139)'/><path d='M28.7503 19.1298C27.1432 21.6426 26.0644 24.0133 25.3363 25.9756C26.1798 27.6981 27.05 29.7758 27.7781 32.1864C28.6526 35.0988 29.0966 37.7403 29.3186 39.9334C27.0677 38.0999 24.4129 36.1554 21.3408 34.2552C18.4329 32.4484 15.6626 31.0011 13.1499 29.8335C13.9712 28.7813 15.1343 27.3474 16.5994 25.7092C18.4151 23.6759 20.8613 20.9367 24.1155 18.3352C26.3885 16.5194 29.8513 14.1309 34.6549 12.0976L34.6238 12.1243C32.8702 13.7491 30.7303 16.0532 28.7592 19.1298H28.7503Z' fill='url(%23paint1_linear_122_1139)'/><path d='M6.35294 14.0643C5.51831 14.0466 4.34628 13.9356 3.00999 13.505C1.69145 13.0788 0.683685 12.4927 0 12.0222C0.0355161 13.4828 0.195339 15.2408 0.617092 17.1897C1.15427 19.6448 1.94895 21.6737 2.69034 23.2142C3.09878 21.7136 3.63596 20.0532 4.35516 18.2819C4.99445 16.7103 5.67813 15.303 6.3485 14.0643H6.35294Z' fill='url(%23paint2_linear_122_1139)'/><defs><linearGradient id='paint0_linear_122_1139' x1='-4.32798' y1='33.8316' x2='27.5032' y2='4.1867' gradientUnits='userSpaceOnUse'><stop stop-color='%23FFA727'/><stop offset='0.05' stop-color='%23FE9F20'/><stop offset='0.2' stop-color='%23FD8D0E'/><stop offset='0.36' stop-color='%23FC8103'/><stop offset='0.53' stop-color='%23FC7E00'/><stop offset='1' stop-color='%23FF4800'/></linearGradient><linearGradient id='paint1_linear_122_1139' x1='19.0632' y1='36.174' x2='39.4215' y2='17.2162' gradientUnits='userSpaceOnUse'><stop stop-color='%23FFA727'/><stop offset='0.05' stop-color='%23FE9F20'/><stop offset='0.2' stop-color='%23FD8D0E'/><stop offset='0.36' stop-color='%23FC8103'/><stop offset='0.53' stop-color='%23FC7E00'/><stop offset='1' stop-color='%23FF4800'/></linearGradient><linearGradient id='paint2_linear_122_1139' x1='2.99011' y1='11.7112' x2='4.1884' y2='23.0595' gradientUnits='userSpaceOnUse'><stop stop-color='%23FFA727'/><stop offset='0.05' stop-color='%23FE9F20'/><stop offset='0.2' stop-color='%23FD8D0E'/><stop offset='0.36' stop-color='%23FC8103'/><stop offset='0.53' stop-color='%23FC7E00'/><stop offset='1' stop-color='%23FF4800'/></linearGradient></defs></svg>")}.tm-review-stars__star--active img{opacity:1}
+ </style><div class="tm-productModal-bg"></div><div class="tm-productModal"><span class="tm-productModal__close" role="button" tabindex="0"></span><div class="tm-productModal__container"><div class="tm-productModal__image-wrapper"><video class="tm-productModal__video"></video><iframe class="tm-productModal__iframe"></iframe><img class="tm-productModal__image" loading="lazy" onerror="this.onerror=null;this.src='https://trustmate.io/images/icons/camera.png';" alt="zdjęcie produktu"/><div class="tm-productModal__product-link-btn"><a href="#" class="tm-productModal__link">zobacz produkt ></a></div><button class="tm-productModal__nav tm-productModal__nav--prev tm-productModal____hidden"><img
+ loading="lazy"
+ width="20"
+ height="30"
+ src="https://trustmate.io/images/widgets/arrow_button.png"
+ alt="prev image"
+ /></button><button class="tm-productModal__nav tm-productModal__nav--next tm-productModal____hidden"><img
+ loading="lazy"
+ width="20"
+ height="30"
+ src="https://trustmate.io/images/widgets/arrow_button.png"
+ alt="next image"
+ /></button><div
+ class="tm-productModal__small-images" 
+ ></div></div><div class="tm-productModal__info-wrapper"><div role="button" class="tm-translation-button" tabindex="0"><img loading="lazy" width="20" height="14" src="https://trustmate.io/images/widgets/icons/eye.svg" alt=""><div class="tm-translation-button-text" tabindex="0">
+ Pokaż tłumaczenie
+ </div><div class="tm-translation-button-text">
+ Pokaż oryginał
+ </div></div><div class="tm-comment__comment
+ "><div class="tm-comment__arrow--up"><i class="tm-comment__icon-arrow"></i></div><div class="tm-comment__header"><i class="tm-comment__chat-icon"></i><div class="tm-comment__header-text">
+ Komentarz sklepu
+ </div></div><div class="tm-comment__text"></div><div class="tm-comment__arrow--down"><i class="tm-comment__icon-arrow"></i></div></div><div class="tm-productModal__review-wrapper"><div class="tm-productModal__author-wrapper"><div class="tm-productModal__author-name"></div></div><div class="tm-productModal__review-grade"><div class="tm-productModal__review-stars"><div class="tm-review-stars__star"><img src="data:," alt class="trustmate-star__icon" /></div><div class="tm-review-stars__star"><img src="data:," alt class="trustmate-star__icon" /></div><div class="tm-review-stars__star"><img src="data:," alt class="trustmate-star__icon" /></div><div class="tm-review-stars__star"><img src="data:," alt class="trustmate-star__icon" /></div><div class="tm-review-stars__star"><img src="data:," alt class="trustmate-star__icon" /></div></div></div><div class="tm-productModal__review"><p class="tm-productModal__review-translated"></p><p class="tm-productModal__review-original"></p><div class="tm-productModal__review-default">
+ Ocena klienta: <span style="font-style: italic;">Dobrze</span><span style="font-style: italic;">: Doskonale</span></div></div></div><div class="tm-productModal__review-createdAt"><span>Dodano: </span><span class="tm-productModal__review-createdAt-text"></span></div></div></div></div></div></div>`;
+  }
+
+  function waitForWindow() {
+    let index = 0;
+    const intervalWindowId = setInterval(function() {
+      if (typeof window !== 'undefined') {
+        clearInterval(intervalWindowId);
+        loadWidgetScript();
+      }
+      index += 1;
+      if (index > 50) {
+        clearInterval(intervalWindowId);
+      }
+    }, 50);
+  }
+
+  function loadWidgetScript() {
+    if (134103 < 10) return;
+
+    function scriptExists(url) {
+      return document.querySelectorAll(`script[src="${url}"]`).length > 0;
+    }
+
+    if(scriptExists('https\u003A\/\/trustmate.io\/build\/js\/widget\/ferret2.280d51d8.js')) {
+      function removeJs(src) {
+        document.querySelector(`script[src="${src}"]`).remove();
+      }
+
+      removeJs('https\u003A\/\/trustmate.io\/build\/js\/widget\/ferret2.280d51d8.js');
+    }
+
+    const widgetScript = document.createElement('script');
+    widgetScript.src = 'https\u003A\/\/trustmate.io\/build\/js\/widget\/ferret2.280d51d8.js';
+    widgetScript.defer = true;
+    widgetScript.onload = () => {
+      loadWidgetHtml();
+    };
+    document.body.appendChild(widgetScript);
+  }
+
+  if (typeof window === 'undefined') {
+    waitForWindow();
+  } else {
+    loadWidgetScript();
+  }
+})();

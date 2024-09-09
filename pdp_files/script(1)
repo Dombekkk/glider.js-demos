@@ -1,0 +1,50 @@
+(() => {
+      // fetch('https://trustmate.io/widget/api/2fb4ab87-99ef-493b-8c71-5ebca65afba4/html?product=122785') - TODO: remove after platform multihornet fix - !!!frontend do not remove 
+    function loadWidgetHtml() {
+    document.getElementById('2fb4ab87-99ef-493b-8c71-5ebca65afba4').innerHTML = ``;
+  }
+
+  function waitForWindow() {
+    let index = 0;
+    const intervalWindowId = setInterval(function() {
+      if (typeof window !== 'undefined') {
+        clearInterval(intervalWindowId);
+        loadWidgetScript();
+      }
+      index += 1;
+      if (index > 50) {
+        clearInterval(intervalWindowId);
+      }
+    }, 50);
+  }
+
+  function loadWidgetScript() {
+    if (0 < 10) return;
+
+    function scriptExists(url) {
+      return document.querySelectorAll(`script[src="${url}"]`).length > 0;
+    }
+
+    if(scriptExists('https\u003A\/\/trustmate.io\/build\/js\/widget\/hydra.959a9c0c.js')) {
+      function removeJs(src) {
+        document.querySelector(`script[src="${src}"]`).remove();
+      }
+
+      removeJs('https\u003A\/\/trustmate.io\/build\/js\/widget\/hydra.959a9c0c.js');
+    }
+
+    const widgetScript = document.createElement('script');
+    widgetScript.src = 'https\u003A\/\/trustmate.io\/build\/js\/widget\/hydra.959a9c0c.js';
+    widgetScript.defer = true;
+    widgetScript.onload = () => {
+      loadWidgetHtml();
+    };
+    document.body.appendChild(widgetScript);
+  }
+
+  if (typeof window === 'undefined') {
+    waitForWindow();
+  } else {
+    loadWidgetScript();
+  }
+})();

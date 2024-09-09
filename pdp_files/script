@@ -1,0 +1,62 @@
+(() => {
+      // fetch('https://trustmate.io/widget/api/40c535b5-3007-469a-a295-8e8fe8029867/html?product=122785') - TODO: remove after platform multihornet fix - !!!frontend do not remove 
+    function loadWidgetHtml() {
+    document.getElementById('40c535b5-3007-469a-a295-8e8fe8029867').innerHTML = `<link rel="stylesheet" href="https://trustmate.io/build/css/widget/hornet.461b60eb.css"><style></style><div
+ class="tm-hornet-container"
+ style="display: none;"
+ data-tmdisableExtra=""
+ data-tmShowWithModal=""
+ data-tmShowWithoutReviews=""
+ data-tmShowZeroReviewsNumber=""
+ data-tmShowOnMobile="1"
+ data-tmScrollToWidget="1"
+ data-url="https://trustmate.io/"
+ data-rating-image=tm-new-star
+ data-reviews-slide-modal-url=https://trustmate.io/api/widget/40c535b5-3007-469a-a295-8e8fe8029867/reviews-slide-modal?product=122785
+></div>`;
+  }
+
+  function waitForWindow() {
+    let index = 0;
+    const intervalWindowId = setInterval(function() {
+      if (typeof window !== 'undefined') {
+        clearInterval(intervalWindowId);
+        loadWidgetScript();
+      }
+      index += 1;
+      if (index > 50) {
+        clearInterval(intervalWindowId);
+      }
+    }, 50);
+  }
+
+  function loadWidgetScript() {
+    if (531 < 10) return;
+
+    function scriptExists(url) {
+      return document.querySelectorAll(`script[src="${url}"]`).length > 0;
+    }
+
+    if(scriptExists('https\u003A\/\/trustmate.io\/build\/js\/widget\/hornet.c2ea134b.js')) {
+      function removeJs(src) {
+        document.querySelector(`script[src="${src}"]`).remove();
+      }
+
+      removeJs('https\u003A\/\/trustmate.io\/build\/js\/widget\/hornet.c2ea134b.js');
+    }
+
+    const widgetScript = document.createElement('script');
+    widgetScript.src = 'https\u003A\/\/trustmate.io\/build\/js\/widget\/hornet.c2ea134b.js';
+    widgetScript.defer = true;
+    widgetScript.onload = () => {
+      loadWidgetHtml();
+    };
+    document.body.appendChild(widgetScript);
+  }
+
+  if (typeof window === 'undefined') {
+    waitForWindow();
+  } else {
+    loadWidgetScript();
+  }
+})();
