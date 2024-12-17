@@ -1,86 +1,29 @@
-// Simple carousel
-// =============================================================================
+const express = require('express');
+const axios = require('axios');
+const bodyParser = require('body-parser');
 
-const $simpleCarousel = document.querySelector(".js-carousel--simple");
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-// Carousel wcv
-new Glider($simpleCarousel, {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    rewind: true,
-                    draggable: false,
-                    scrollLock: true,
-                    scrollLockDelay: 100,
-                    duration: 0.3,
-                   arrows: {
-    prev: ".js-carousel--simple-prev",
-    next: ".js-carousel--simple-next",
-  },
-                    dots: '.slider-main .slider-main__dots'
-                })
+// Middleware do parsowania JSON
+app.use(bodyParser.json());
 
-// new Glider($simpleCarousel, {
-//   slidesToShow: 2,
-//   slidesToScroll: 2,
-//   draggable: true,
-//   dots: ".js-carousel--simple-dots",
-//   arrows: {
-//     prev: ".js-carousel--simple-prev",
-//     next: ".js-carousel--simple-next",
-//   },
-//   // scrollLock: true,
-//   // scrollLockDelay: 100,
-//   // rewind: true,
-// });
+// Trasa do weryfikacji Turnstile
+app.post('/verify-captcha', async (req, res) => {
+  const { token } = req.body;
+  
+  try {
+    const verificationResponse = await axios.post('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      secret: 'TWOJ_PRYWATNY_KLUCZ',
+      response: token
+    });
 
-// Responsive carousel
-// =============================================================================
-
-const $responsiveCarousel = document.querySelector(".js-carousel--responsive");
-
-new Glider($responsiveCarousel, {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  draggable: true,
-  duration: 0.25,
-  dots: ".js-carousel--responsive-dots",
-  arrows: {
-    prev: ".js-carousel--responsive-prev",
-    next: ".js-carousel--responsive-next",
-  },
-  responsive: [
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
-    },
-    {
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      },
-    },
-  ],
+    if (verificationResponse.data.success) {
+      res.json({ success: true });
+    } else {
+      res.json({ success: false });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Błąd weryfikacji' });
+  }
 });
-
-// Thumbs carousel
-// =============================================================================
-
-const $thumbsCarousel = document.querySelector(".js-carousel--thumbs");
-const $thumbs = document.querySelectorAll("[data-carousel-index]");
-const thumbsGlider = new Glider($thumbsCarousel, {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-});
-
-$thumbs.forEach($t => {
-  $t.addEventListener("click", e => {
-    const index = e.target.getAttribute("data-carousel-index");
-
-    thumbsGlider.scrollItem(index, true);
-  });
-});
-
