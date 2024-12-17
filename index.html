@@ -1,63 +1,21 @@
-<!doctype html>
-<html lang="pt-br">
-    <head>
-      <link rel="preload" as="image" href="img/1.jpg">
-        <meta charset="utf-8">
-        <title>Glider.js demos</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-      
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KH8R2FQ8');</script>
-<!-- End Google Tag Manager -->
-      
-      <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-        crossorigin />
+<head>
+  <!-- Inne meta tagi -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+  <form id="myForm">
+    <!-- Twoje pole formularza -->
+    <div class="cf-turnstile" data-sitekey="TWOJ_PUBLICZNY_KLUCZ"></div>
+    <button type="submit">Wyślij</button>
+  </form>
 
-
-      <link 
-        rel="preload"
-        as="style"
-        href="https://fonts.googleapis.com/css?family=Nunito:400,800&display=swap" />
-      
-        <link 
-          href="https://fonts.googleapis.com/css?family=Nunito:400,800&display=swap" 
-          rel="stylesheet"
-          onload="this.media='all'">
-      
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-        <link rel="stylesheet" href="sass/style.scss">
-      <link rel="preload" href="https://res.cloudinary.com/responsivebreakpoints/image/upload/w_345/v1453714657/robot.png" imagesrcset="https://res.cloudinary.com/responsivebreakpoints/image/upload/w_345/v1453714657/robot.png 345w, https://res.cloudinary.com/responsivebreakpoints/image/upload/w_690/v1453714657/robot.png 690w" imagesizes="calc(100vw - 30px)" as="image" media="(max-width: 480px)">
-<link rel="preload" href="https://res.cloudinary.com/responsivebreakpoints/image/upload/w_345/v1453714657/robot.png" imagesrcset="https://res.cloudinary.com/responsivebreakpoints/image/upload/w_432/v1453714657/robot.png 432w, https://res.cloudinary.com/responsivebreakpoints/image/upload/w_864/v1453714657/robot.png 864w" imagesizes="432px" as="image" media="(min-width: 463px) and (max-width: 767px)">
-<link rel="preload" href="https://res.cloudinary.com/responsivebreakpoints/image/upload/w_432/v1453714657/robot.png" imagesrcset="https://res.cloudinary.com/responsivebreakpoints/image/upload/w_338/v1453714657/robot.png 338w, https://res.cloudinary.com/responsivebreakpoints/image/upload/w_676/v1453714657/robot.png 676w" imagesizes="338px" as="image" media="(min-width: 768px) and (max-width: 991px)">
-<link rel="preload" href="https://res.cloudinary.com/responsivebreakpoints/image/upload/w_376/v1453714657/robot.png" imagesrcset="https://res.cloudinary.com/responsivebreakpoints/image/upload/w_376/v1453714657/robot.png 376w, https://res.cloudinary.com/responsivebreakpoints/image/upload/w_752/v1453714657/robot.png 752w" imagesizes="376px" as="image" media="(min-width: 992px) and (max-width: 1199px)">
-<link rel="preload" href="https://res.cloudinary.com/responsivebreakpoints/image/upload/w_424/v1453714657/robot.png" imagesrcset="https://res.cloudinary.com/responsivebreakpoints/image/upload/w_424/v1453714657/robot.png 424w, https://res.cloudinary.com/responsivebreakpoints/image/upload/w_850/v1453714657/robot.png 850w" imagesizes="424px" as="image" media="(min-width: 1200px)">
-    </head>
-
-    <body>
-   <img src="https://res.cloudinary.com/responsivebreakpoints/image/upload/w_432/v1453714657/robot.png" data-role="product-image" srcset="
-    https://res.cloudinary.com/responsivebreakpoints/image/upload/w_345/v1453714657/robot.png 345w,
-    https://res.cloudinary.com/responsivebreakpoints/image/upload/w_690/v1453714657/robot.png 690w,
-    https://res.cloudinary.com/responsivebreakpoints/image/upload/w_432/v1453714657/robot.png 432w,
-    https://res.cloudinary.com/responsivebreakpoints/image/upload/w_864/v1453714657/robot.png 864w,
-    https://res.cloudinary.com/responsivebreakpoints/image/upload/w_338/v1453714657/robot.png 338w,
-    https://res.cloudinary.com/responsivebreakpoints/image/upload/w_676/v1453714657/robot.png 676w,
-    https://res.cloudinary.com/responsivebreakpoints/image/upload/w_376/v1453714657/robot.png 376w,
-    https://res.cloudinary.com/responsivebreakpoints/image/upload/w_752/v1453714657/robot.png 752w,
-    https://res.cloudinary.com/responsivebreakpoints/image/upload/w_424/v1453714657/robot.png 424w,
-    https://res.cloudinary.com/responsivebreakpoints/image/upload/w_850/v1453714657/robot.png 850w" sizes="(max-width: 462px) calc(100vw - 30px),
-    (min-width: 463px) and (max-width: 767px) 432px,
-    (min-width: 768px) and (max-width: 991px) 338px,
-    (min-width: 992px) and (max-width: 1199px) 376px,
-    (min-width: 1200px) 425px" alt="" width="432" height="432" fetchpriority="high">
-
-    </body>
-
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-    <script src="js/index.js"></script>
-</html>
+  <script>
+    document.getElementById('myForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Pobieranie tokena Turnstile
+      const token = turnstile.render('#cf-turnstile', {
+        sitekey: 'TWOJ_PUBLICZNY_KLUCZ'
+      });
+    });
+  </script>
+</body>
